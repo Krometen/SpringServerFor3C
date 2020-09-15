@@ -1,7 +1,7 @@
 # SpringServer
 Server for sharing files on the Spring Boot with template logic. 
 # Technology stack
-Spring Boot, JUnit, Hibernate, Mysql.
+Spring Boot, JUnit, Hibernate.
 # Methods
 1. /Upload file to the server.
 2. /GetNamesOfAllFiles.
