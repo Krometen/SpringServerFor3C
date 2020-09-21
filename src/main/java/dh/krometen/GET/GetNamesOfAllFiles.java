@@ -26,5 +26,4 @@ public class GetNamesOfAllFiles{
         );
         return Arrays.toString(files);
     }
-
 }

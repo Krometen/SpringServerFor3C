@@ -24,11 +24,9 @@ public class DownloadFile {
         System.out.println("fileName: " + fileName);
         File file = new File(DIRECTORY + "/" + fileName);
         InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
-
         return ResponseEntity.ok()
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + file.getName())
                 .contentLength(file.length())
                 .body(resource);
     }
-
 }

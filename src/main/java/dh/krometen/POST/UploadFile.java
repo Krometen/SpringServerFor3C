@@ -17,9 +17,8 @@ import static dh.krometen.ServDir.DIRECTORY;
 public class UploadFile {
 
     @RequestMapping(value="/upload", method=RequestMethod.POST)
-    public @ResponseBody String handleFileUpload(@RequestParam("name") String name,
+    public @ResponseBody String fileUpload(@RequestParam("name") String name,
                                                  @RequestParam("file") MultipartFile file){
-
         if (!file.isEmpty()) {
             try {
                 byte[] bytes = file.getBytes();

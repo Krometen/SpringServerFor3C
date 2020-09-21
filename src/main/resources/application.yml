@@ -1,0 +1,9 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto:
+    database-platform: org.hibernate.dialect.
+  datasource:
+    url: ""
+    username:
+    password:
